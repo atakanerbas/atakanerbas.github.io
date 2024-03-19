@@ -1,0 +1,27 @@
+entries:
+  - title: An engineer who is primarily focused on backend engineering and passionate about building things from scratch and solving complex problems.
+    entries:
+      - title: Main interests
+        entries:
+          - title: "Programming: Golang, Python, C++"
+          - title: "Music: Player of blues harmonica, listener of electronic music"
+          - title: "Love to read about: Theory of consciousness, philosophy, futurism"
+      - title: Professional
+        entries:
+          - title: "Currently working at <a target='_blank' href='https://wealt.co'>Wealt</a> as founding backend engineer."
+          - title: <a href="/assets/files/AtakanErbasR.pdf">Resume</a>
+  - title: Programming
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
+
+  - title: Ideas
+    post_list:
+
+  - title: Connect
+    entries:
+      - title: <a href="mailto:h.atakan.erbas@gmail.com">Mail me</a>
+      - title: <a target="_blank" href="https://x.com/benatakanerbas">X</a>
+      - title: <a target="_blank" href="https://www.linkedin.com/in/atakan-erbaş">LinkedIn</a>
