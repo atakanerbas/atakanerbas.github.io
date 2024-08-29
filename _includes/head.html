@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
 
   <!-- Add OpenGraph and Twitter card image meta tags with full URLs -->
-  {% capture full_image_url %}{{ page.image | default: site.og_image | absolute_url | replace: 'http://', 'https://' }}{% endcapture %}
+  {% capture full_image_url %}https://{{ site.url }}{{ page.image | default: site.og_image | remove_first: 'https://' | remove_first: 'http://' }}{% endcapture %}
   <meta property="og:image" content="{{ full_image_url }}" />
   <meta property="og:image:secure_url" content="{{ full_image_url }}" />
   <meta name="twitter:image" content="{{ full_image_url }}" />
