@@ -17,10 +17,11 @@
   <link rel="icon" type="image/x-icon" href={{ "/favicon.png" | relative_url }} />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
 
-  <!-- Add both og:image and og:image:secure_url meta tags -->
-  {% assign image_url = page.image | default: site.og_image | absolute_url %}
-  <meta property="og:image" content="{{ image_url }}" />
-  <meta property="og:image:secure_url" content="{{ image_url | replace: 'http://', 'https://' }}" />
+  <!-- Add OpenGraph and Twitter card image meta tags with full URLs -->
+  {% capture full_image_url %}{{ page.image | default: site.og_image | absolute_url | replace: 'http://', 'https://' }}{% endcapture %}
+  <meta property="og:image" content="{{ full_image_url }}" />
+  <meta property="og:image:secure_url" content="{{ full_image_url }}" />
+  <meta name="twitter:image" content="{{ full_image_url }}" />
 
   {% if jekyll.environment == 'production' %}
   {% include analytics.html %}
