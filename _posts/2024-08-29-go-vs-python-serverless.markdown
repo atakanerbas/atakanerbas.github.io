@@ -2,7 +2,7 @@
 layout: post
 title: "Go vs Python for Serverless: Performance, Cost, and Ease of Use"
 description: "A comparison of Go and Python for serverless applications in terms of performance, cost, and ease of use."
-date: 2024-08-26 12:00:00 +0300
+date: 2024-08-29 12:00:00 +0300
 categories: programming
 tags: go python serverless
 image: "/assets/image/gopher.jpg"
