@@ -5,7 +5,7 @@ description: "A comparison of Go and Python for serverless applications in terms
 date: 2024-08-29 12:00:00 +0300
 categories: programming
 tags: go python serverless
-image: "/assets/image/gopher.jpg"
+image_url: "/assets/image/gopher.jpg"
 ---
 
 In this article:

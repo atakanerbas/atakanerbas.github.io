@@ -4,7 +4,7 @@ title: "Using AWS Cognito with Golang middlewares"
 description: "A guide to implement a middleware for Go net/http handlers to authenticate with AWS Cognito"
 date: 2024-08-21 15:41:52 +0300
 categories: programming
-image: "/assets/image/gopher.jpg"
+image_url: "/assets/image/gopher.jpg"
 ---
 
 In this article:
