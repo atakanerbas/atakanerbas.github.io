@@ -71,17 +71,17 @@ You can use [AWS SAM](https://aws.amazon.com/serverless/sam/) for local testing,
 You may also need to cross-compile your Golang code for Lambda, depending on your local machine. 
 
 ### Development and Developer Experience
-There are lots of IDE plugins, free and paid services, libraries, and documentation for Python Serverless. Golang lacks these, development tools are not as mature as Python.
-Python has a rich library ecosystem. Go also has great libraries but finding the library and the documentation is not as easy as Python.
-You can look [Awesome Go](https://github.com/avelino/awesome-go) for a curated list of Go libraries.  
+There are lots of IDE plugins, free and paid services, libraries, and documentation for Python Serverless. Golang lacks these; development tools are not as mature as Python's.
+Python has a rich library ecosystem. Go also has great libraries but finding the library and the documentation is not as easy as with Python.
+You can look at [Awesome Go](https://github.com/avelino/awesome-go) for a curated list of Golang libraries.  
 
 Language consistency is another point to consider. If you are using CDK, you can use Python for both infrastructure and application code.
 CDK for Golang does not feel as natural as Python. You may want to reuse some functions between infrastructure and application code, and it is easier with Python.
 If your team is already using Python, it is easier to onboard new developers, or switch between projects/stacks. 
 ### Administration
 Python is a scripting language, and it makes it a great tool for application administration tasks.
-You can directly invoke your functions from another packages and emulate your whole flow. You can just create a notebook and import your functions, and run them.
-This might be a DB migration, a data processing task, or a simple monitoring script. Building all these in Golang is not as easy as Python.
+You can directly invoke your functions from other packages and emulate your whole flow. You can just create a notebook and import your functions, and run them.
+This might be a DB migration, a data processing task, or a simple monitoring script. Building all these in Golang is not as easy as in Python.
 
 ## Conclusion
 My very subjective conclusion is:
