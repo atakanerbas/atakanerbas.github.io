@@ -14,12 +14,15 @@
   {%-seo title=false-%}
   {%-feed_meta-%}
 
-    <link rel="icon" type="image/x-icon" href={{ "/favicon.png" | relative_url }} />
+  <link rel="icon" type="image/x-icon" href={{ "/favicon.png" | relative_url }} />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
-    {% if jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
 
-    <!-- Add the og:image meta tag with secure_url and explicit HTTPS -->
-    <meta property="og:image:secure_url" content="https://{{ page.image | default: site.og_image | absolute_url | remove: 'http://' | remove: 'https://' }}" />
+  <!-- Add both og:image and og:image:secure_url meta tags -->
+  {% assign image_url = page.image | default: site.og_image | absolute_url %}
+  <meta property="og:image" content="{{ image_url }}" />
+  <meta property="og:image:secure_url" content="{{ image_url | replace: 'http://', 'https://' }}" />
+
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 </head>
