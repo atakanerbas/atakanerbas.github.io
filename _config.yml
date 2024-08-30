@@ -34,6 +34,8 @@ remote_theme: riggraz/no-style-please
 markdown: kramdown
 #plugins:
 #  - jekyll-feed
+theme_config:
+  back_home_text: "Home"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
